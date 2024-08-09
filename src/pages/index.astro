@@ -1,0 +1,39 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import playStore from "../assets/play-store.png";
+import appStore from "../assets/app-store.png";
+---
+
+<Layout
+  title="One night"
+  content="The landing page of One night. Find your spark, relationship, dating, hookup, onenight-stand, whatever you seek, one night community is here to provide. download app today, ask for one night."
+>
+  <main
+    class="bg-[url(/hero-bg.jpg)] min-h-[calc(100vh-14.75rem)] -z-10 text-white bg-cover bg-center bg-opacity-40 relative before:absolute before:bg-[#0d013f99] before:w-full before:h-full"
+  >
+    <div class="px-9 lg:px-[186px] relative py-32 lg:py-52">
+      <p
+        class="text-3xl md:text-4xl lg:text-[4.375rem] font-black lg:leading-tight text-center mb-10"
+      >
+        Find your spark tonight. One Night - where connections ignite!
+      </p>
+      <p
+        class="text-sm md:text-xl px-4 lg:text-3xl font-semibold mb-16 text-center"
+      >
+        Find your spark, relationship, dating, hookup, onenight-stand, whatever
+        you seek, one night community is here to provide. download app today,
+        ask for one night.
+      </p>
+      <span class="flex gap-3 justify-center items-center px-4">
+        <a class="max-w-72" href="" target="_blank">
+          <!-- <img src="play-store.png" alt="link to on night app on play store" /> -->
+          <Image src={playStore} alt="link to on night app on play store" />
+        </a>
+        <a class="max-w-72" href="" target="_blank"
+          ><Image src={appStore} alt="link to one night app on app store" /></a
+        >
+      </span>
+    </div>
+  </main>
+</Layout>
