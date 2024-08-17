@@ -14,38 +14,17 @@ const { title, content } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="icon.svg" />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <title>{title}</title>
     <ViewTransitions />
     <meta name="description" {content} />
-
-    <!-- Facebook Meta Tags -->
-    <meta
-      property="og:url"
-      content="https://www.dynamictotalservices.com.au/"
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Dynamic Total Services" />
-    <meta property="og:description" {content} />
-    <meta
-      property="og:image"
-      content="https://res.cloudinary.com/dddjzeutf/image/upload/v1692365778/og-image_gh8bz7.png"
-    />
-
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:domain" content="dynamictotalservices.com.au" />
-    <meta
-      property="twitter:url"
-      content="https://www.dynamictotalservices.com.au/"
-    />
-    <meta name="twitter:title" content="Dynamic Total Services" />
-    <meta name="twitter:description" {content} />
-    <meta
-      name="twitter:image"
-      content="https://res.cloudinary.com/dddjzeutf/image/upload/v1692365778/og-image_gh8bz7.png"
-    />
   </head>
 
   <body class="bg-white text-black">
